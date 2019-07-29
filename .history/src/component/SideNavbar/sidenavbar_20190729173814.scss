@@ -1,0 +1,19 @@
+@import '../../style/variable.scss';
+
+.sidenavbar {
+  position: $absolute;
+  display: $flex;
+  height: $full-width;
+  padding: 56px 0 0;
+  align-items: $flex-start;
+  justify-content: $space-between;
+  flex-wrap: $wrap;
+  .nav {
+    width: $auto;
+    display: $flex;
+    background: $basic-color;
+    flex-direction: $column;
+    height: calc(100vh - 56px);
+    justify-content: $space-between;
+  }
+}
