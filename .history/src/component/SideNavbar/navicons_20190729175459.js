@@ -1,6 +1,0 @@
-const sideNav = [
-  {
-    title: 'Home',
-
-  },
-];

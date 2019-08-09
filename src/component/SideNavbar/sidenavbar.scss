@@ -4,7 +4,6 @@
   position: $absolute;
   display: $flex;
   height: $full-width;
-  padding: 56px 0 0;
   align-items: $flex-start;
   justify-content: $space-between;
   flex-wrap: $wrap;
@@ -13,7 +12,7 @@
     display: $flex;
     background: $basic-color;
     flex-direction: $column;
-    height: calc(100vh - 56px);
+    height: $full-width;
     justify-content: $space-between;
   }
   .navbar {
@@ -27,5 +26,43 @@
     list-style: $none-value;
     width: 64px;
     height: 70px;
+    display: $flex;
+    align-items: $center;
+    justify-content: $center;
+    &:last-child {
+      .nav-link {
+        border: $none-value;
+      }
+    }
+  }
+  .nav-link {
+    display: $flex;
+    align-items: $center;
+    justify-content: $center;
+    width: $full-width;
+    height: $full-width;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    position: $relative;
+    transform: perspective(1px) translateZ(0);
+    &::before {
+      content: "";
+      position: $absolute;
+      z-index: -1;
+      top: $zero-value;
+      left: $zero-value;
+      right: $zero-value;
+      bottom: $zero-value;
+      background: rgba(0, 0, 0, 0.4);
+      transform: scaleX(0);
+      transform-origin: 0 50%;
+      transition-property: transform;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-out;
+    }
+    &:hover {
+      &::before {
+        transform: scaleX(1);
+      }
+    }
   }
 }
