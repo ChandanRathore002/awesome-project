@@ -1,6 +1,7 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import LoginContainer from './container/LoginContainer';
-import './App.css';
+import './style/app.scss';
 
 function App() {
   return (

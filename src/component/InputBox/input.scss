@@ -1,0 +1,7 @@
+@import '../../style/variable.scss';
+
+.form-control {
+  height: 40px;
+  border: $zero-value;
+  border-radius: 6px;
+}

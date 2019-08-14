@@ -1,0 +1,30 @@
+@import '../../style/variable.scss';
+
+.login-page {
+  background: url('../../images/login_bg.png') no-repeat;
+  background-size: cover;
+  background-color: $basic-color;
+  #root,
+  .App {
+    height: $full-width;
+    display: table;
+    margin: $zero-value;
+    padding: $zero-value;
+    width: $full-width;
+  }
+  .container {
+    display: table-cell;
+    text-align: $center;
+    vertical-align: middle;
+    position: $relative;
+  }
+}
+
+.login-form {
+  width: $full-width;
+  max-width: 300px;
+  margin: $zero-value $auto;
+  .cs-logo {
+    margin-bottom: 85px;
+  }
+}

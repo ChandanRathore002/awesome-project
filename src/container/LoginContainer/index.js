@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Container from 'react-bootstrap/Container';
 import LoginForm from '../../module/LoginForm';
 
-const LoginContainer = () => (
-  <LoginForm />
-);
+import './login.scss';
 
-export default LoginContainer
+const LoginContainer = () => {
+  useEffect(() => {
+    document.body.classList.add('login-page');
+  });
+  return (
+    <Container>
+      <LoginForm />
+    </Container>
+  );
+};
+
+export default LoginContainer;

@@ -1,6 +1,6 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav';
-import Icon from '../Icon';
+import Icon from '../../component/Icon';
 import sideNav from './navIcons';
 import csIcon from '../../images/cs-icon.svg';
 import './sidenavbar.scss';
