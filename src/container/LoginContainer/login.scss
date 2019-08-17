@@ -28,3 +28,30 @@
     margin-bottom: 85px;
   }
 }
+
+.form-control {
+  background: $basic-color;
+  border: $none-value;
+  color: $white-color;
+  &:focus {
+    border: $none-value;
+    background: $basic-color;
+    color: $white-color;
+  }
+}
+
+.form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $light-gray;
+}
+
+.form-control::-moz-placeholder { /* Firefox 19+ */
+  color: $light-gray;
+}
+
+.form-control:-ms-input-placeholder { /* IE 10+ */
+  color: $light-gray;
+}
+
+.form-control:-moz-placeholder { /* Firefox 18- */
+  color: $light-gray;
+}
