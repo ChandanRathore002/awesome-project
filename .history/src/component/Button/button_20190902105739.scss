@@ -1,0 +1,16 @@
+@import '../../style/variable.scss';
+
+.btn-primary {
+  background: $primary-color;
+  border: $none-value;
+  font-size: $normal-font;
+  font-weight: $font-weight-500;
+  line-height: 16px;
+  border-radius: 6px;
+  padding: 12px 40px;
+  &:hover,
+  &:active,
+  &:focus {
+    background: $primary-color;
+  }
+}

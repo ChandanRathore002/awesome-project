@@ -23,7 +23,7 @@ const LoginForm = () => (
           <Button
             placeholder="Password"
             type="password"
-            classes="btn btn-primary"
+            classes="btn"
           >
             Sign in
           </Button>

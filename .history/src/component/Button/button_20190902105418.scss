@@ -1,0 +1,11 @@
+@import '../../style/variable.scss';
+
+.btn-primary {
+  background: $primary-color;
+  border: $none-value;
+  &:hover,
+  &:active,
+  &:focus {
+    background: $primary-color;
+  }
+}

@@ -20,13 +20,7 @@ const LoginForm = () => (
           <InputBox placeholder="Password" type="password" />
         </Form.Group>
         <Form.Group>
-          <Button
-            placeholder="Password"
-            type="password"
-            classes="btn btn-primary"
-          >
-            Sign in
-          </Button>
+          <Button placeholder="Password" type="password">Sign in</Button>
         </Form.Group>
       </Form>
     </div>

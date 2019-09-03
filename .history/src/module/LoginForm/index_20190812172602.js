@@ -2,7 +2,6 @@ import React from 'react';
 import Form from 'react-bootstrap/Form';
 import Image from 'react-bootstrap/Image';
 import InputBox from '../../component/InputBox';
-import Button from '../../component/Button';
 import csLogo from '../../images/cs_logo.svg';
 
 
@@ -18,15 +17,6 @@ const LoginForm = () => (
         </Form.Group>
         <Form.Group>
           <InputBox placeholder="Password" type="password" />
-        </Form.Group>
-        <Form.Group>
-          <Button
-            placeholder="Password"
-            type="password"
-            classes="btn btn-primary"
-          >
-            Sign in
-          </Button>
         </Form.Group>
       </Form>
     </div>

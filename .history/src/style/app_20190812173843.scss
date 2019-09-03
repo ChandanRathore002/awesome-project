@@ -1,0 +1,10 @@
+@import '../style/variable.scss';
+
+html {
+  height: $full-width;
+}
+
+body {
+  font-family: $basic-font;
+  height: $full-width;
+}
